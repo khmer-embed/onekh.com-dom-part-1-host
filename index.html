@@ -3,8 +3,6 @@
 <head>
 <meta charset=utf-8 />
 <title>BY: ONEKH.ME</title>
-  
-
   <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
   <script src="https://vjs.zencdn.net/7.14.3/video.js"></script>
   <style>
@@ -18,25 +16,30 @@
 </head>
 <body>
 
-  <video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360"  data-setup='{}' poster="">
+  <video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" data-setup='{}' poster="https://image.tving.com/upload/cms/caip/CAIP0400/P001731527.jpg/dims/resize/1280">
     <source src="https://bigf.bigo.sg/asia_live/V4s7/1CniJ3.mp4" type="video/mp4" />
     <p class="vjs-no-js">
       To view this video please enable JavaScript, and consider upgrading to a web browser that
       <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
     </p>
   </video>
-  
 <script>
-var player = videojs('my_video_1', {autoplay: 'any'});
-player.play();
-</script>
-<script>
-var player = videojs('my-video_1', {
+videojs('my_video_1', {
+  width: "100%",
+  hieght: "100%",
+  breakpoints: {
+    tiny: 300,
+    xsmall: 400,
+    small: 500,
+    medium: 600,
+    large: 700,
+    xlarge: 800,
+    huge: 900
+  },
   autoplay: true,
   controls: true,
   fluid: true
 });
 </script>
-  
 </body>
 </html>
